@@ -1,0 +1,1599 @@
+/*-------------------------------------------Start Section---------------------------------------------*/
+
+/*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
+* {
+    box-sizing: border-box;
+}
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*default body settings*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    /*font-family: 'Lato', sans-serif;*/
+    font-size: 20px;
+    /* Sets the font size to 16px */
+    font-weight: 300;
+    /* Sets the font weight to 300 */
+    line-height: 2.0;
+    /* Sets the line-height to 1.6 * the font-size */
+    color: #282A36;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.4;
+}
+
+h1 {
+    font-family: "bookman-jf-pro", serif;
+    font-weight: 400;
+    /* original setting: font-size: 2.75em; */
+    font-style: normal;
+    color: #282A36;
+    font-size: 37px;
+}
+
+h2 {
+
+    font-family: "lato", sans-serif;
+
+    font-size: 32px;
+
+    font-weight: 300;
+
+    font-style: normal;
+
+    color: #282A36;
+
+}
+
+h3 {
+    font-family: "bookman-jf-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+#about-page h3 {
+    margin-top: 0;
+}
+
+h4 {
+    font-family: "lato", sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    font-style: normal;
+    color: #282936;
+}
+
+h5 {
+    font-family: "lato", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #282936;
+    letter-spacing: 1.5px;
+
+}
+
+#index-page h3 {
+    /*fix spacing below project headers on index page*/
+    margin-bottom: 10px;
+}
+
+#contact h3 {
+    /*style my name in footer*/
+    display: block;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    margin-top: 0;
+}
+
+#about-page h3 {
+    margin-top: 0;
+}
+
+
+
+/*setting images to full-width*/
+img {
+    width: 100%;
+}
+
+/*change the default link color to your primary color*/
+a {
+    color: #282A36;
+    text-decoration: none;
+    /* No underlining */
+}
+
+/*change the link color on footer to white*/
+#contact a {
+    color: #ffffff;
+
+    text-decoration: none;
+    /* No underlining */
+}
+
+a:hover {
+    color: #282A36;
+    text-decoration: underline;
+    /* Underlining when hovering over a link */
+}
+
+/*style the current nav item dark grey*/
+.active a {
+    color: #282A36;
+}
+
+a:active {
+    /* style selected link dark grey*/
+    color: #282A36;
+}
+
+/*Pseudo classes for Accessibility for Across the Web*/
+a:hover,
+a:focus {
+    color: #282A36;
+    text-decoration: none;
+}
+
+
+/*CSS code for the button class*/
+.button {
+    display: inline-block;
+    /* since the <a> tag is inline by default, we need to change this to inline-block*/
+    background-color: transparent;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #282A36;
+    /* needed to override the default link color */
+    font-weight: 400;
+    padding: 15px;
+    border: 1px solid #282A36;
+    /* width of the border, type, color */
+    transition-duration: 0.2s;
+    transition-property: opacity;
+
+}
+
+/*button class hover and active state*/
+.button:hover {
+    background-color: #E9A7A1;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    /* width of the border, type, color */
+    transition-duration: 0.2s;
+    opacity: 0.8;
+}
+
+.button:active {
+    background-color: #282A36;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+/*button rules for the mailto button*/
+.button.contact {
+    background-color: transparent;
+    color: #ff7f50;
+    text-transform: uppercase;
+    border: 2px solid #ff7f50;
+    transition: 0.8s opacity;
+}
+
+/*button class hover and active state*/
+
+.button.contact:hover {
+    opacity: 0.8;
+    background-color: green;
+    color: #ffffff;
+}
+
+.button.contact:active {
+    opacity: 0.8;
+    background-color: green;
+    color: #ffffff;
+}
+
+/*email contact in footer styling, hover and active state */
+
+#contact a {
+    /*stylize email link desktop size*/
+    display: inline-block;
+    /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: transparent;
+    font-family: "bookman-jf-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    /* needed to override the default link color */
+}
+
+#contact a:hover {
+    color: #6B6C72;
+}
+
+#contact a:active {
+    color: #6B6C72;
+}
+
+/* skill & tool text styling*/
+
+.skill-button {
+
+    border: none;
+    color: #282A36;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 8px 4px;
+    border-radius: 30px;
+
+}
+
+.row-button {
+    margin: 25px 0;
+    /* 25px top and bottom, 0 left and right */
+}
+
+/* social media icon styling*/
+
+#linkedin:hover {
+    /* (../) tells the CSS to go back one directory and than into the image directory */
+    content: url(../img/svg/grey_inkedin.svg);
+}
+
+#behance:hover {
+    content: url(../img/svg/grey_behance.svg);
+}
+
+#instagram:hover {
+    content: url(../img/svg/grey_instagram.svg);
+}
+
+#github:hover {
+    content: url(../img/svg/grey_github.svg);
+}
+
+.navtoggle.responsive li {
+    display: block;
+}
+
+
+
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*stye the page sections*/
+
+/*style the <header> element*/
+header {
+    background-color: #ffffff;
+    /* text-align: center; */
+    padding: 10px 0 4px;
+    /* top padding 10px, r & l padding = 0, bottom = 4px */
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    /* box-shadow; *80px 7px 5px 0px rgba(50, 50, 50, 0.75); how to put a shadow on the bottom of the header/nav area */
+}
+
+/*style the logo*/
+header .logo {
+    max-width: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    height: 24px;
+    height: 28px;
+
+}
+
+/*style the top logo on hover*/
+header .logo:hover {
+    opacity: 0.8;
+}
+
+/*Navigation Styling*/
+nav {
+    font-size: 18px;
+}
+
+
+/*removes margins & padding on mobile screens */
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav > ul > li > a {
+font-family: "lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 0 15px;
+    text-transform: none;
+    font-weight: 500;
+    color: #7E7F86;
+}
+
+#hero { /* alternate background grey #fafafa*/
+    background-color: #ffffff;
+    padding: 0px;
+    display: inline-block;
+    width: 100%;
+}
+
+#hero span {
+    /*stylizes pink h1 font and "block" puts a return between the two lines of "Hi, I'm Beth....*/
+    display: block;
+    color: #e9a7a1;
+}
+
+#greeting span {
+    color: #e9a7a1;
+    display: inline;
+    /*stylizes pink h1 "about me " page & "inline" removes the return after "hello,... */
+}
+
+#hero h1 {
+    text-align: center;
+    /* Centers text on mobile*/
+}
+
+#hero h4 {
+    text-align: center;
+    /* Centers text on mobile */
+    font-size: 24px;
+    color: #e9a7a1;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    
+}
+
+
+#contact span {
+    display: block;
+}
+
+
+#contact {
+    background-color: #282A36;
+    padding: 20px;
+    color: #ffffff;
+    /*changes body text to white within footer*/
+    font-family: 'Lato', sans-serif;
+    text-transform: none;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+
+
+/*Style the social icons*/
+.social {
+    list-style-type: none;
+    padding: 0;
+    margin-left: -10px;
+}
+
+.social li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.social img {
+    height: 32px;
+    width: 32px;
+}
+
+#story img {
+    /*stlize headshot*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/*stlyize skill & tool list*/
+.skill-button {
+
+    border: none;
+    color: #282A36;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 8px 4px;
+    border-radius: 30px;
+
+}
+
+.row-button {
+    margin: 3px 0;
+    /* 25px top and bottom, 0 left and right */
+}
+
+main {
+    padding-top: 89px;
+    /* pushes the main conent down on mobile so it is visible below the header */
+}
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/* Layout styling */
+
+.container {
+    padding: 0 15px;
+}
+
+
+.row {
+    margin: 50px 0px;
+}
+
+/*stylinging mobile rows */
+
+
+.deskView {
+    display: none;
+}
+
+.mobileView {
+    display: block;
+}
+
+#work .row {
+    padding-bottom: 20px;
+}
+
+/* styling mobile menu */
+/*hides all list elements in top navigation menu except for the hamburger icon (last-child)*/
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+/* positions hamburger icon to the right of my logo */
+.navtoggle,
+.navtoggle.responsive {
+    position: relative;
+}
+
+/*positions hamburger menu & stylizes it */
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    /* padding-right: 0; can add if i want hamburger to nudge to the right */
+}
+
+.navtoggle.responsive li {
+    display: block;
+}
+
+/*stylizes toggle menu */
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #e9a7a1;
+}
+
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+}
+
+/*column padding for mobile*/
+#padding-top {
+    padding-top: 40px;
+}
+
+#contact .logo {
+    float: none;
+    max-width: 50px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    
+}
+
+/*--------------------------------------------Start Section--------------------------------------------*/
+
+/*======================styling mobile project pages ==================================================================*/
+
+
+
+#cover-image {
+    /* centering and making cover image fit full width of screen */
+    width: 100%;
+    justify-content: center;
+
+}
+
+.big-pics {
+    /* centering and making cover image fit full width of screen */
+    width: 100%;
+   display:block;
+    padding-left: 10px;
+padding-right: 10px;
+}
+
+
+
+#project span {
+    /*stylizes bold project h2 font color: blue #5fb3bd*/
+    color: #d75c5c;
+    font-weight: 700;
+}
+
+#project h5 {
+    /* fixing the mystery margin on h5's in project area */
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+
+.ns-problem img {
+    /*mobile 'problem' image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 0px;
+}
+
+
+
+.ns-solution img {
+    /* mobile 'the solution' image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 0px;
+
+}
+
+/*styling for project pages MY ROLE lists */
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#project .margin {
+    margin: 20px 20px;
+    padding-bottom: 20px;
+    padding-top:20px;
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+    .ns-wireframe img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    }
+
+/* styling headers not in columns */        
+.project-hdr-01 {
+    padding-left: 10px;
+    padding-top:20px;                
+}
+
+
+/* styling headers not in columns */        
+.project-hdr-01 {
+    padding-left: 10px;
+    padding-top:20px;                
+}
+
+/* styling mobile OCEAN SPACE images */        
+.ns-ocean-01 img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:105%;
+}
+
+.ns-ocean-02 img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}  
+
+/* styling mobile MOON image */        
+.ns-moons img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}  
+
+.moon-exercise {
+    padding: 0px 0px 20px 0px;
+}
+
+.ns-myStuff-01
+ {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:103%;
+}  
+
+.ns-myStuff-02{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}  
+/*styling my stuff second page*/
+.ns-myStuff-lg{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}  
+
+.my-stuff-image {
+    padding: 0px 0px 20px 0px;
+}
+/*====================== end of styling mobile project pages =================================================================*/
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*SVG anamation*/
+.svg-animation {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes color-change {
+    0% {
+        fill: #edc655;
+    }
+
+    50% {
+        fill: #fcffad;
+    }
+
+    100% {
+        fill: #f76414;
+    }
+}
+
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+/*single line...
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+*/
+
+@keyframes cloud-move {
+    from {
+        transform: translate(0, 50px);
+    }
+
+    to {
+        transform: translate(200px, 50px);
+    }
+}
+
+.cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        transform: translate(100px, 48px);
+    }
+}
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*Media Queries*/
+
+/*clear page flow*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*float all columns left*/
+[class*="col-"] {
+    padding: 10px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+    body {
+        font-size: 20px;
+    }
+
+    header {
+        text-align: unset;
+        /* Removes the text-align: center attribute assigned */
+        padding: 10px
+            /*padding-top*/
+            0
+            /*padding l & r */
+            13px;
+        /*padding-bottom */
+    }
+
+    nav {
+        width: auto;
+        float: right;
+    }
+
+
+    .col-md-6 {
+        width: 50%;
+        float: left;
+        padding-bottom: 40px;
+    }
+
+
+    #story img {
+        /*stlize headshot for medium*/
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    #hero h1 {
+        /*stlize h1 for medium*/
+        text-align: center;
+    }
+
+    #hero h4 {
+        /*stlize h4 for medium*/
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+    /*stylinging medium rows */
+    .row {
+        margin: 50px 20px;
+
+    }
+
+    /*removes tools column padding defined in mobile*/
+    #padding-top {
+        padding-top: 10px;
+    }
+
+
+    header .logo {
+        /* pushes logo in to line up with hero & projects below */
+        margin-left: 20px;
+    }
+
+    #contact a {
+        /*stylize email link desktop size*/
+        font-size: 20px;
+    }
+
+    /*makes top navigation appear in a row, rather than stacked as in mobile view */
+    nav > ul > li {
+        display: inline-block;
+    }
+
+    /* makes sure navigation menu items appear on large screens */
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    /* hides hamburger menu on large screens */
+    .navtoggle li:last-child {
+        display: none;
+    }
+
+    /* adds top and bottom margins to navigation menu */
+    nav > ul {
+        margin: 1em 0;
+    }
+
+
+
+    #contact .logo {
+        float: right;
+        max-width: 50px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        max-width: 50px;
+        height: 24px;
+        width: 28px;
+        margin-right:0px;
+    }
+    
+
+    .col-md-3 {
+        width: 33.3%;
+        float: left;
+        padding-bottom: 17px;
+    }
+
+    /*========================== styling 'medium-project' pages =================================================================*/
+
+    /*styling for medium rows*/
+#project .margin {
+    margin: 20px 20px;
+    padding-bottom: 20px;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+/*styling for medium columns*/
+    #project .padding-left {
+    padding:30px;
+    } 
+    
+#project .padding-right {
+    padding:30px;
+    }  
+
+/*styling 'the problem' medium image */
+
+.ns-solution img {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 85%;
+    margin-top:-56px;
+
+}
+
+/*styling for medium competitive analysis*/
+    .ns-analysis img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-top: 60px;
+
+    }
+    
+    .ns-problem img {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 95%;
+    margin-top:-100px;
+}
+    
+   .ns-signOn img {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 90%;
+    margin-top:-40px;
+}
+
+.ns-animal-helper img {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 90%;
+    margin-top:0px;
+    padding-bottom: 30px;
+}
+    
+    #project .analysis-left {
+        padding: 30px;
+
+    }
+
+    #project .analysis-right {
+        padding: 30px;
+    }
+    
+    .padding-role {
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+
+
+     /* styling headers not in columns */        
+
+.project-hdr-01 {
+     padding-left: 30px;
+    padding-top:20px; 
+    padding-right:30px;
+}
+    
+/* styling medium moon magic images */        
+.ns-moon-welcome {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:95%;
+    padding-left:10px;
+    padding-right: 10px
+}
+
+.ns-moon-guide {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    padding-left:10px;
+    padding-right: 10px
+}
+    
+/* styling medium MOON image */        
+.ns-moons img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}  
+
+.moon-exercise {
+    padding: 0px 20px 20px 20px;
+}
+    
+
+    /*styling my stuff large image*/
+.ns-myStuff-lg{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}  
+
+.big-pics {
+    /* centering and making cover image fit full width of screen */
+    width: 100%;
+   display:block;
+    padding-right:20px;
+    padding-left: 20px;
+}
+
+    }
+    
+/*============================== end of styling "medium-project-pages"============================================*/
+    /*--------------------------------------------End Section---------------------------------------------
+
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+    @media only screen and (min-width: 1024px) {
+        .container {
+            max-width: 1500px;
+            margin-left: 30px;
+            margin-right: auto;
+        }
+
+
+        .col-lg-5 {
+            width: 40%;
+        }
+
+        .col-lg-7 {
+            width: 60%;
+            float: left;
+            padding-bottom: 40px;
+        }
+
+        .col-lg-8 {
+            width: 40%;
+            float: right;
+        }
+
+        #hero h1 {
+            font-family: "warnock-pro", serif;
+            font-weight: 600;
+            font-style: normal;
+            text-align: left;
+            font-size: 60px;
+            padding-left: 28px;
+        }
+
+        #hero h4 {
+            text-align: left;
+            color: #e9a7a1;
+            font-weight: 500;
+            letter-spacing: 2px;
+            padding-left: 28px;
+        }
+
+
+
+        h3 {
+            font-size: 30px;
+        }
+
+        #contact h3 {
+            font-size: 24px;
+        }
+
+        #contact {
+            font-size: 16px;
+        }
+
+        header .logo {
+            /* pushes logo towards the right to line up vertically projects below */
+            margin-left: 20px;
+        }
+
+        /*stylinging large rows */
+        .row {
+            margin: 50px 20px;
+
+        }
+
+        /*removes tools column padding defined in mobile*/
+        #padding-top {
+            padding-top: 10px;
+        }
+
+        .col-lg-6 {
+            width: 50%;
+            float: left;
+            padding-bottom: 40px;
+        }
+
+        body {
+            font-size: 18px;
+        }
+
+        #about-page .col-lg-5 {
+            float: left;
+        }
+
+        #about-page .col-lg-7 {
+            float: right;
+        }
+
+        #story img {
+            /*stlize headshot*/
+            display: block;
+            width: 75%;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        }
+
+/*styling footer columns */
+        .col-lg-3 {
+            width: 33.3%;
+            float: left;
+            padding-bottom: 0px;
+        }
+
+        #contact .logo {
+            float: right;
+            max-width: 50px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            max-width: 50px;
+            height: 24px;
+            width: 28px;
+            margin-right:-0px;
+        }
+
+#contact .padding-left {
+            /*footer columns */
+            padding-left: 50px;
+            margin-top: -40px;
+        }
+
+ #contact .margin-top { /*footer columns */
+            margin-top: -40px;
+        }
+
+/*moves skills column to the right */
+        #skills-padding {
+            padding-left: 20px;
+        }
+        
+/*=============================================styling "large project" pages ================================================*/
+
+/* fixing the mystery margin on h5's in project area */
+#project h5 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/*styling for large rows*/
+#project .margin {
+    margin: 15px 20px;
+
+}
+
+/*styling for large columns*/
+#project .padding-left {
+    padding-left:60px;
+    padding-top:40px;
+    padding-right:10px;
+    padding-bottom:30px;
+    }
+        
+#project .padding-right {
+    padding-left:0px;
+    padding-top:40px;
+    padding-right:40px;
+
+    }
+
+#project .padding-role {
+      padding-top: 28px;
+     padding-left: 60px;
+    padding-bottom: 30px;
+                    }
+        
+        
+/*styling 'the problem'large image */
+.ns-problem img {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 100%;
+    margin-top:80px;
+}
+        
+/*styling 'solution' large image */
+.ns-solution img {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 100%;
+    margin-top:100px;
+} 
+        
+/*styling for large competitive analysis*/
+.ns-analysis img {
+    display: block;
+    margin-left: 0px;
+    margin-right:0px;
+    width: 80%;
+    margin-top:60px;
+     }    
+
+#project .analysis-left {
+    padding-left:60px;
+    padding-top:40px;
+    padding-right:10px;
+    margin-right:-70px;
+    padding-bottom:30px;
+    }
+
+#project .analysis-right{
+    padding-top:60px;
+    padding-right:0px;
+    }  
+        
+/*styling "on-boarding" section */
+.project-hdr-01{
+    padding:10px 60px 0px 60px;
+    margin-top:20px;
+    margin-bottom:0px;
+    }
+        
+.sub-header {
+   margin-top:-20px;
+    margin-bottom: 0px;
+        }
+        
+/*styling x-large on-boarding images */
+   .ns-signOn img {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 100%;
+    margin-top:-50px;
+    padding-top: 10px;
+    padding-left:0px;
+}
+
+.ns-animal-helper img {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width:98%;
+    padding-right:0px;
+}
+    
+/* styling large moon magic images */        
+.ns-moon-welcome img{
+    display: block;
+    margin-left:-20px;
+    margin-right:auto;
+    width:110%;
+}
+
+.ns-moon-guide img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    padding-left:10px;
+    padding-right: 0px;
+}
+        
+/* styling large LISTEN images */        
+.ns-listen-01 img{
+    display: block;
+    margin-left:-10px;
+    margin-right:auto;
+    padding-top: 30px;
+    width:103%;
+}
+
+.ns-listen-02 img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    margin-top: -20px;
+}
+        
+/* styling LARGE OCEAN SPACE images */        
+.ns-ocean-01 img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 20px;
+    width:105%;
+}
+
+.ns-ocean-02 img{
+    display: block;
+    margin-left:auto;
+    margin-right:5px;
+    width:98%;
+    margin-top: -30px;
+}  
+        
+/* styling medium MOON image */        
+.ns-moons img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}  
+
+.moon-exercise {
+    padding: 0px 40px 40px 40px;
+} 
+        
+.ns-myStuff-01
+ {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:105%;
+}  
+
+.ns-myStuff-02{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:90%;
+} 
+        
+/*styling my stuff large image*/
+.ns-myStuff-lg{
+    display: block;
+    margin-right:auto;
+    margin-left:auto;
+    padding-top: 40px;
+    padding-left: 20px;
+    margin-bottom: -20px;
+    width:100%;
+}  
+        
+        .ns-wireframes-wonky {
+            margin-top: -15px;
+        } 
+        
+/*=========column mistake ========================*/
+   .col-lg-4 {
+    width:25%;
+    float:left;
+        }   
+
+    }
+
+    /* ==============================
+X-large devices (1440px or larger)
+================================= */
+    @media only screen and (min-width: 1440px) {
+
+
+        /*removes tools column padding defined in mobile*/
+        #padding-top {
+            padding-top: 10px;
+        }
+
+        .col-xl-6 {
+            width: 50%;
+            float: left;
+            padding-bottom: 40px;
+        }
+
+
+        body {
+            font-size: 18px;
+        }
+
+        /*removes tools column padding defined in mobile*/
+        #padding-top {
+            padding-top: 10px;
+        }
+
+
+        #padding-left {
+            /*footer columns */
+            padding-left: 80px;
+            margin-top: -40px;
+
+        }
+
+#contact .margin-top {
+            /*footer columns */
+            margin-top: -40px;
+        }
+        
+/*===========================================styling "extra-large project" pages =============================================*/
+
+/* fixing the mystery margin on h5's in project area */
+#project h5 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/*styling for large rows*/
+#project .margin {
+    margin: 15px 40px;
+    padding-left:60px;
+    padding-right:60px;
+
+    
+}
+/*styling for my row column*/
+.padding-role {
+      margin-top:10px;
+        }    
+        
+        
+/*styling for large columns*/
+#project .padding-left {
+    padding-left:60px;
+    padding-top:40px;
+    padding-right:10px;
+    padding-bottom:30px;
+    }
+        
+#project .padding-right {
+    padding-left:0px;
+    padding-top:40px;
+    padding-right:50px;
+
+    }
+
+#project .padding-role {
+      padding-top: 28px;
+     padding-left: 60px;
+    padding-bottom: 30px;
+                    }
+        
+        
+.ns-problem img {
+    display: block;
+    margin-left: 30px;
+    margin-right:60px;
+    width: 85%;
+    margin-top:30px;
+    float:right;
+
+}
+
+.ns-solution img {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 70%;
+    margin-top:50px;
+}
+        
+/*styling for large competitive analysis*/
+.ns-analysis img {
+    display: block;
+    margin-left: 0px;
+    margin-right:0px;
+    width: 80%;
+    margin-top:60px;
+     }    
+
+#project .analysis-left {
+    padding-left:60px;
+    padding-top:40px;
+    padding-right:10px;
+    margin-right:-70px;
+    padding-bottom:30px;
+    }
+
+#project .analysis-right{
+    padding-top:60px;
+    padding-right:60px;
+    }  
+        
+/*styling "on-boarding" section */
+.project-hdr-01{
+    padding:10px 60px 0px 60px;
+    margin-top:20px;
+    margin-bottom:0px;
+    }
+        
+.sub-header {
+       margin-top:-20px;
+        }
+        
+/*styling x-large on-boarding images */
+   .ns-signOn img {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 100%;
+    margin-top:-30px;
+    padding-top: 10px;
+    padding-left:25px;
+}
+
+.ns-animal-helper img {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 100%;
+    margin-top:10px;
+padding-top: 0px;
+     padding-right:20px;
+}
+    
+/* styling x-large moon magic images */        
+.ns-moon-welcome {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:95%;
+    padding-left:10px;
+    padding-right: 10px
+}
+
+.ns-moon-guide {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    padding-left:10px;
+    padding-right: 10px
+}
+        
+        
+/* styling x-large LISTEN images */        
+.ns-listen-01 img{
+    display: block;
+    margin-left:-10px;
+    margin-right:auto;
+    padding-top: 50px;
+    width:100%;
+}
+
+.ns-listen-02 img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:103%;
+    padding-bottom: 0px;
+    margin-top: -20px;
+}
+        
+/* styling x-large OCEAN SPACE images */        
+.ns-ocean-01 img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 30px;
+    width:105%;
+}
+
+.ns-ocean-02 img{
+    display: block;
+    margin-left:auto;
+    margin-right:5px;
+    width:98%;
+    padding-bottom: 0px;
+    margin-top: -20px;
+} 
+        
+.ns-myStuff-01
+ {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}  
+
+.ns-myStuff-02{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:95%;
+} 
+        
+.big-pics {
+    /* centering and making cover image fit full width of screen */
+    width: 100%;
+   display:block;
+    padding-right:40px;
+    padding-left: 40px;
+}    
+
+    }
