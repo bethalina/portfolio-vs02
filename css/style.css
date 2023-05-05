@@ -9,7 +9,27 @@
 /*-------------------------------------------Start Section---------------------------------------------*/
 /*default body settings*/
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+/*scroll to top button styling*/
+#btnScrollToTop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #e9a7a1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#btnScrollToTop:active {
+    background: #ba8681;
 }
 
 body {
@@ -283,6 +303,8 @@ a:focus {
 
 
 
+
+
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
 /*stye the page sections*/
@@ -329,7 +351,7 @@ nav > ul {
 }
 
 nav > ul > li > a {
-font-family: "lato", sans-serif;
+    font-family: "lato", sans-serif;
     font-weight: 300;
     font-style: normal;
     padding: 0 15px;
@@ -338,7 +360,8 @@ font-family: "lato", sans-serif;
     color: #7E7F86;
 }
 
-#hero { /* alternate background grey #fafafa*/
+#hero {
+    /* alternate background grey #fafafa*/
     background-color: #ffffff;
     padding: 0px;
     display: inline-block;
@@ -370,7 +393,7 @@ font-family: "lato", sans-serif;
     font-weight: 500;
     letter-spacing: 2px;
     margin-bottom: 0px;
-    
+
 }
 
 
@@ -493,7 +516,13 @@ main {
     position: absolute;
     right: 0;
     top: 2px;
-    font-size: 20px;
+    font-size: 24px;
+    color: #282A36;
+    /* padding-right: 0; can add if i want hamburger to nudge to the right */
+}
+
+.navtoggle li .icon :hover {
+    color: #7E7F86;
     /* padding-right: 0; can add if i want hamburger to nudge to the right */
 }
 
@@ -526,7 +555,7 @@ main {
     max-width: 50px;
     margin-top: -20px;
     margin-bottom: 30px;
-    
+
 }
 
 /*--------------------------------------------Start Section--------------------------------------------*/
@@ -545,9 +574,9 @@ main {
 .big-pics {
     /* centering and making cover image fit full width of screen */
     width: 100%;
-   display:block;
+    display: block;
     padding-left: 10px;
-padding-right: 10px;
+    padding-right: 10px;
 }
 
 
@@ -597,84 +626,141 @@ ul.no-bullets {
 #project .margin {
     margin: 20px 20px;
     padding-bottom: 20px;
-    padding-top:20px;
-    padding-left:10px;
+    padding-top: 20px;
+    padding-left: 10px;
     padding-right: 10px;
 }
 
-    .ns-wireframe img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-    }
+.ns-wireframe img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
 
-/* styling headers not in columns */        
+/* styling headers not in columns */
 .project-hdr-01 {
     padding-left: 10px;
-    padding-top:20px;                
+    padding-top: 20px;
 }
 
 
-/* styling headers not in columns */        
+/* styling headers not in columns */
 .project-hdr-01 {
     padding-left: 10px;
-    padding-top:20px;                
+    padding-top: 20px;
 }
 
-/* styling mobile OCEAN SPACE images */        
-.ns-ocean-01 img{
+/* styling mobile OCEAN SPACE images */
+.ns-ocean-01 img {
     display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:105%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 105%;
 }
 
-.ns-ocean-02 img{
+.ns-ocean-02 img {
     display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
-}  
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
 
-/* styling mobile MOON image */        
+/* styling mobile MOON image */
 .ns-moons img {
     display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
-}  
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
 
 .moon-exercise {
     padding: 0px 0px 20px 0px;
 }
 
-.ns-myStuff-01
- {
+.ns-myStuff-01 {
     display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:103%;
-}  
+    margin-left: auto;
+    margin-right: auto;
+    width: 103%;
+}
 
-.ns-myStuff-02{
+.ns-myStuff-02 {
     display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
-}  
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 /*styling my stuff second page*/
-.ns-myStuff-lg{
+.ns-myStuff-lg {
     display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
-}  
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
 
 .my-stuff-image {
     padding: 0px 0px 20px 0px;
 }
+
+
+/*styling for table of contents on project pages */
+#project a {
+    display: inline-block;
+    background-color: transparent;
+    font-family: "lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #282A36;
+    letter-spacing: 1px;
+    font-size:14px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+
+
+}
+
+#project a:hover {
+    color: #7E7F86;
+    font-weight: 400;
+        text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+}
+
+#project a:active {
+    color: #7E7F86;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+/*styling table of contents columns mobile */
+        .margin-content-left {
+        padding-left: 40px;
+        margin-bottom: -17px;
+    }
+       .margin-content-middle {
+        padding-left: 40px;
+        margin-bottom: -17px;
+
+    }
+       .margin-content-right {
+        padding-left: 40px;
+    }
+    /*styling for table of contents on project pages */
+#project a {
+    display: inline-block;
+    background-color: transparent;
+    font-family: "lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #282A36;
+    letter-spacing: 1px;
+    font-size:14px;
+
+}
+
 /*====================== end of styling mobile project pages =================================================================*/
 
 /*--------------------------------------------End Section---------------------------------------------*/
@@ -815,6 +901,7 @@ Medium devices (640px and larger)
         margin-top: -20px;
         margin-bottom: 30px;
     }
+
     /*stylinging medium rows */
     .row {
         margin: 50px 20px;
@@ -867,9 +954,9 @@ Medium devices (640px and larger)
         max-width: 50px;
         height: 24px;
         width: 28px;
-        margin-right:0px;
+        margin-right: 0px;
     }
-    
+
 
     .col-md-3 {
         width: 33.3%;
@@ -877,38 +964,40 @@ Medium devices (640px and larger)
         padding-bottom: 17px;
     }
 
+
+    
     /*========================== styling 'medium-project' pages =================================================================*/
 
     /*styling for medium rows*/
-#project .margin {
-    margin: 20px 20px;
-    padding-bottom: 20px;
-    padding-top:10px;
-    padding-left:10px;
-    padding-right: 10px;
-}
+    #project .margin {
+        margin: 20px 20px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
-/*styling for medium columns*/
+    /*styling for medium columns*/
     #project .padding-left {
-    padding:30px;
-    } 
-    
-#project .padding-right {
-    padding:30px;
-    }  
+        padding: 30px;
+    }
 
-/*styling 'the problem' medium image */
+    #project .padding-right {
+        padding: 30px;
+    }
 
-.ns-solution img {
-    display: block;
-    margin-left: auto;
-    margin-right:auto;
-    width: 85%;
-    margin-top:-56px;
+    /*styling 'the problem' medium image */
 
-}
+    .ns-solution img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        margin-top: -56px;
 
-/*styling for medium competitive analysis*/
+    }
+
+    /*styling for medium competitive analysis*/
     .ns-analysis img {
         display: block;
         margin-left: auto;
@@ -917,32 +1006,32 @@ Medium devices (640px and larger)
         margin-top: 60px;
 
     }
-    
-    .ns-problem img {
-    display: block;
-    margin-left: auto;
-    margin-right:auto;
-    width: 95%;
-    margin-top:-100px;
-}
-    
-   .ns-signOn img {
-    display: block;
-    margin-left: auto;
-    margin-right:auto;
-    width: 90%;
-    margin-top:-40px;
-}
 
-.ns-animal-helper img {
-    display: block;
-    margin-left: auto;
-    margin-right:auto;
-    width: 90%;
-    margin-top:0px;
-    padding-bottom: 30px;
-}
-    
+    .ns-problem img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        margin-top: -100px;
+    }
+
+    .ns-signOn img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-top: -40px;
+    }
+
+    .ns-animal-helper img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-top: 0px;
+        padding-bottom: 30px;
+    }
+
     #project .analysis-left {
         padding: 30px;
 
@@ -951,649 +1040,803 @@ Medium devices (640px and larger)
     #project .analysis-right {
         padding: 30px;
     }
-    
+
     .padding-role {
+        padding-left: 20px;
+        padding-bottom: 30px;
+    }
+    
+    /*styling table of contents for medium project pages*/
+        .margin-content-l {
+        padding-left: 20px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+        .margin-content-r {
+        padding-left: 20px;
+        padding-bottom: 30px;
+        margin-top: -10px;
+    }
+        
+
+
+    /* styling headers not in columns */
+
+    .project-hdr-01 {
+        padding-left: 30px;
+        padding-top: 20px;
+        padding-right: 30px;
+    }
+
+    /* styling medium moon magic images */
+    .ns-moon-welcome {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+    .ns-moon-guide {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+    /* styling medium MOON image */
+    .ns-moons img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .moon-exercise {
+        padding: 0px 20px 20px 20px;
+    }
+
+
+    /*styling my stuff large image*/
+    .ns-myStuff-lg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .big-pics {
+        /* centering and making cover image fit full width of screen */
+        width: 100%;
+        display: block;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+   /*styling for table of contents on project pages */
+#project a {
+    display: inline-block;
+    background-color: transparent;
+    font-family: "lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #282A36;
+    letter-spacing: 1px;
+    font-size:14px;
+
+}
+
+#project a:hover {
+    color: #7E7F86;
+    font-weight: 400;
+        text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+}
+
+#project a:active {
+    color: #7E7F86;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+/*styling table of contents columns mobile */
+        .margin-content-left {
+        padding-left: 40px;
+        margin-bottom: -17px;
+    }
+       .margin-content-middle {
+        padding-left: 40px;
+        margin-bottom: -17px;
+
+    }
+       .margin-content-right {
+        padding-left: 40px;
+    }
+    /*styling for table of contents on project pages */
+#project a {
+    display: inline-block;
+    background-color: transparent;
+    font-family: "lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #282A36;
+    letter-spacing: 1px;
+    font-size:20px;
+
+} 
+    
+     #project .padding-role {
+        padding-top: 28px;
         padding-left: 30px;
         padding-bottom: 30px;
     }
-
-
-     /* styling headers not in columns */        
-
-.project-hdr-01 {
-     padding-left: 30px;
-    padding-top:20px; 
-    padding-right:30px;
-}
     
-/* styling medium moon magic images */        
-.ns-moon-welcome {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:95%;
-    padding-left:10px;
-    padding-right: 10px
 }
 
-.ns-moon-guide {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
-    padding-left:10px;
-    padding-right: 10px
-}
-    
-/* styling medium MOON image */        
-.ns-moons img {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
-}  
-
-.moon-exercise {
-    padding: 0px 20px 20px 20px;
-}
-    
-
-    /*styling my stuff large image*/
-.ns-myStuff-lg{
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
-}  
-
-.big-pics {
-    /* centering and making cover image fit full width of screen */
-    width: 100%;
-   display:block;
-    padding-right:20px;
-    padding-left: 20px;
-}
-
-    }
-    
 /*============================== end of styling "medium-project-pages"============================================*/
-    /*--------------------------------------------End Section---------------------------------------------
+/*--------------------------------------------End Section---------------------------------------------
 
 
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-    @media only screen and (min-width: 1024px) {
-        .container {
-            max-width: 1500px;
-            margin-left: 30px;
-            margin-right: auto;
-        }
-
-
-        .col-lg-5 {
-            width: 40%;
-        }
-
-        .col-lg-7 {
-            width: 60%;
-            float: left;
-            padding-bottom: 40px;
-        }
-
-        .col-lg-8 {
-            width: 40%;
-            float: right;
-        }
-
-        #hero h1 {
-            font-family: "warnock-pro", serif;
-            font-weight: 600;
-            font-style: normal;
-            text-align: left;
-            font-size: 60px;
-            padding-left: 28px;
-        }
-
-        #hero h4 {
-            text-align: left;
-            color: #e9a7a1;
-            font-weight: 500;
-            letter-spacing: 2px;
-            padding-left: 28px;
-        }
-
-
-
-        h3 {
-            font-size: 30px;
-        }
-
-        #contact h3 {
-            font-size: 24px;
-        }
-
-        #contact {
-            font-size: 16px;
-        }
-
-        header .logo {
-            /* pushes logo towards the right to line up vertically projects below */
-            margin-left: 20px;
-        }
-
-        /*stylinging large rows */
-        .row {
-            margin: 50px 20px;
-
-        }
-
-        /*removes tools column padding defined in mobile*/
-        #padding-top {
-            padding-top: 10px;
-        }
-
-        .col-lg-6 {
-            width: 50%;
-            float: left;
-            padding-bottom: 40px;
-        }
-
-        body {
-            font-size: 18px;
-        }
-
-        #about-page .col-lg-5 {
-            float: left;
-        }
-
-        #about-page .col-lg-7 {
-            float: right;
-        }
-
-        #story img {
-            /*stlize headshot*/
-            display: block;
-            width: 75%;
-            border-radius: 50%;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-        }
-
-/*styling footer columns */
-        .col-lg-3 {
-            width: 33.3%;
-            float: left;
-            padding-bottom: 0px;
-        }
-
-        #contact .logo {
-            float: right;
-            max-width: 50px;
-            margin-top: 8px;
-            margin-bottom: 15px;
-            max-width: 50px;
-            height: 24px;
-            width: 28px;
-            margin-right:-0px;
-        }
-
-#contact .padding-left {
-            /*footer columns */
-            padding-left: 50px;
-            margin-top: -40px;
-        }
-
- #contact .margin-top { /*footer columns */
-            margin-top: -40px;
-        }
-
-/*moves skills column to the right */
-        #skills-padding {
-            padding-left: 20px;
-        }
-        
-/*=============================================styling "large project" pages ================================================*/
-
-/* fixing the mystery margin on h5's in project area */
-#project h5 {
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-
-/*styling for large rows*/
-#project .margin {
-    margin: 15px 20px;
-
-}
-
-/*styling for large columns*/
-#project .padding-left {
-    padding-left:60px;
-    padding-top:40px;
-    padding-right:10px;
-    padding-bottom:30px;
+@media only screen and (min-width: 1024px) {
+    .container {
+        max-width: 1500px;
+        margin-left: 30px;
+        margin-right: auto;
     }
-        
-#project .padding-right {
-    padding-left:0px;
-    padding-top:40px;
-    padding-right:40px;
+
+
+    .col-lg-5 {
+        width: 40%;
+    }
+
+    .col-lg-7 {
+        width: 60%;
+        float: left;
+        padding-bottom: 40px;
+    }
+
+    .col-lg-8 {
+        width: 40%;
+        float: right;
+    }
+
+    #hero h1 {
+        font-family: "warnock-pro", serif;
+        font-weight: 600;
+        font-style: normal;
+        text-align: left;
+        font-size: 60px;
+        padding-left: 28px;
+    }
+
+    #nature-space h1 {
+        text-align: center;
+    }
+
+    #hero h4 {
+        text-align: left;
+        color: #e9a7a1;
+        font-weight: 500;
+        letter-spacing: 2px;
+        padding-left: 28px;
+    }
+
+
+    #nature-space h4 {
+        text-align: center;
+    }
+
+
+    h3 {
+        font-size: 30px;
+    }
+
+    #contact h3 {
+        font-size: 24px;
+    }
+
+    #contact {
+        font-size: 16px;
+    }
+
+    header .logo {
+        /* pushes logo towards the right to line up vertically projects below */
+        margin-left: 20px;
+    }
+
+    /*stylinging large rows */
+    .row {
+        margin: 50px 20px;
 
     }
 
-#project .padding-role {
-      padding-top: 28px;
-     padding-left: 60px;
-    padding-bottom: 30px;
-                    }
-        
-        
-/*styling 'the problem'large image */
-.ns-problem img {
-    display: block;
-    margin-left: auto;
-    margin-right:auto;
-    width: 100%;
-    margin-top:80px;
-}
-        
-/*styling 'solution' large image */
-.ns-solution img {
-    display: block;
-    margin-left: auto;
-    margin-right:auto;
-    width: 100%;
-    margin-top:100px;
-} 
-        
-/*styling for large competitive analysis*/
-.ns-analysis img {
-    display: block;
-    margin-left: 0px;
-    margin-right:0px;
-    width: 80%;
-    margin-top:60px;
-     }    
-
-#project .analysis-left {
-    padding-left:60px;
-    padding-top:40px;
-    padding-right:10px;
-    margin-right:-70px;
-    padding-bottom:30px;
+    /*removes tools column padding defined in mobile*/
+    #padding-top {
+        padding-top: 10px;
     }
 
-#project .analysis-right{
-    padding-top:60px;
-    padding-right:0px;
-    }  
-        
-/*styling "on-boarding" section */
-.project-hdr-01{
-    padding:10px 60px 0px 60px;
-    margin-top:20px;
-    margin-bottom:0px;
+    .col-lg-6 {
+        width: 50%;
+        float: left;
+        padding-bottom: 40px;
     }
-        
-.sub-header {
-   margin-top:-20px;
-    margin-bottom: 0px;
-        }
-        
-/*styling x-large on-boarding images */
-   .ns-signOn img {
-    display: block;
-    margin-left: auto;
-    margin-right:auto;
-    width: 100%;
-    margin-top:-50px;
-    padding-top: 10px;
-    padding-left:0px;
-}
 
-.ns-animal-helper img {
-    display: block;
-    margin-left: auto;
-    margin-right:auto;
-    width:98%;
-    padding-right:0px;
-}
+    body {
+        font-size: 18px;
+    }
+
+    #about-page .col-lg-5 {
+        float: left;
+    }
+
+    #about-page .col-lg-7 {
+        float: right;
+    }
+
+    #story img {
+        /*stlize headshot*/
+        display: block;
+        width: 75%;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    /*styling footer columns */
+    .col-lg-3 {
+        width: 33.3%;
+        float: left;
+        padding-bottom: 0px;
+    }
+
+    #contact .logo {
+        float: right;
+        max-width: 50px;
+        margin-top: 8px;
+        margin-bottom: 15px;
+        max-width: 50px;
+        height: 24px;
+        width: 28px;
+        margin-right: -0px;
+    }
+
+    #contact .padding-left {
+        /*footer columns */
+        padding-left: 50px;
+        margin-top: -40px;
+    }
+
+    #contact .margin-top {
+        /*footer columns */
+        margin-top: -40px;
+    }
+
+    /*moves skills column to the right */
+    #skills-padding {
+        padding-left: 20px;
+    }
+
+    /*=============================================styling "large project" pages ================================================*/
+
+    /* fixing the mystery margin on h5's in project area */
+    #project h5 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    /*styling for large rows*/
+    #project .margin {
+        margin: 15px 20px;
+
+    }
+
+    /*styling for large columns*/
+    #project .padding-left {
+        padding-left: 60px;
+        padding-top: 40px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+    }
+
+    #project .padding-right {
+        padding-left: 0px;
+        padding-top: 40px;
+        padding-right: 40px;
+
+    }
+
+    #project .padding-role {
+        padding-top: 28px;
+        padding-left: 60px;
+        padding-bottom: 30px;
+    }
+
+
+    /*styling 'the problem'large image */
+    .ns-problem img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    /*styling 'solution' large image */
+    .ns-solution img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    /*styling for large competitive analysis*/
+    .ns-analysis img {
+        display: block;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 80%;
+        margin-top: 60px;
+    }
+
+    #project .analysis-left {
+        padding-left: 60px;
+        padding-top: 40px;
+        padding-right: 10px;
+        margin-right: -70px;
+        padding-bottom: 30px;
+    }
+
+    #project .analysis-right {
+        padding-top: 60px;
+        padding-right: 0px;
+    }
+
+    /*styling "on-boarding" section */
+    .project-hdr-01 {
+        padding: 10px 60px 0px 60px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .sub-header {
+        margin-top: -20px;
+        margin-bottom: 0px;
+    }
+
+    /*styling x-large on-boarding images */
+    .ns-signOn img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-top: -50px;
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+
+    .ns-animal-helper img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 98%;
+        padding-right: 0px;
+    }
+
+    /* styling large moon magic images */
+    .ns-moon-welcome img {
+        display: block;
+        margin-left: -20px;
+        margin-right: auto;
+        width: 110%;
+    }
+
+    .ns-moon-guide img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+
+    /* styling large LISTEN images */
+    .ns-listen-01 img {
+        display: block;
+        margin-left: -10px;
+        margin-right: auto;
+        padding-top: 30px;
+        width: 103%;
+    }
+
+    .ns-listen-02 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-top: -20px;
+    }
+
+    /* styling LARGE OCEAN SPACE images */
+    .ns-ocean-01 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        width: 105%;
+    }
+
+    .ns-ocean-02 img {
+        display: block;
+        margin-left: auto;
+        margin-right: 5px;
+        width: 98%;
+        margin-top: -30px;
+    }
+
+    /* styling medium MOON image */
+    .ns-moons img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .moon-exercise {
+        padding: 0px 40px 40px 40px;
+    }
+
+    .ns-myStuff-01 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 105%;
+    }
+
+    .ns-myStuff-02 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    /*styling my stuff large image*/
+    .ns-myStuff-lg {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 40px;
+        padding-left: 20px;
+        margin-bottom: -20px;
+        width: 100%;
+    }
+
+    .ns-wireframes-wonky {
+        margin-top: -15px;
+    }
+
+    /*=========column mistake ========================*/
+    .col-lg-4 {
+        width: 25%;
+        float: left;
+    }
     
-/* styling large moon magic images */        
-.ns-moon-welcome img{
-    display: block;
-    margin-left:-20px;
-    margin-right:auto;
-    width:110%;
-}
-
-.ns-moon-guide img{
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
-    padding-left:10px;
-    padding-right: 0px;
-}
-        
-/* styling large LISTEN images */        
-.ns-listen-01 img{
-    display: block;
-    margin-left:-10px;
-    margin-right:auto;
-    padding-top: 30px;
-    width:103%;
-}
-
-.ns-listen-02 img{
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
-    margin-top: -20px;
-}
-        
-/* styling LARGE OCEAN SPACE images */        
-.ns-ocean-01 img{
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    padding-top: 20px;
-    width:105%;
-}
-
-.ns-ocean-02 img{
-    display: block;
-    margin-left:auto;
-    margin-right:5px;
-    width:98%;
-    margin-top: -30px;
-}  
-        
-/* styling medium MOON image */        
-.ns-moons img {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
-}  
-
-.moon-exercise {
-    padding: 0px 40px 40px 40px;
-} 
-        
-.ns-myStuff-01
- {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:105%;
-}  
-
-.ns-myStuff-02{
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:90%;
-} 
-        
-/*styling my stuff large image*/
-.ns-myStuff-lg{
-    display: block;
-    margin-right:auto;
-    margin-left:auto;
-    padding-top: 40px;
-    padding-left: 20px;
-    margin-bottom: -20px;
-    width:100%;
-}  
-        
-        .ns-wireframes-wonky {
-            margin-top: -15px;
-        } 
-        
-/*=========column mistake ========================*/
-   .col-lg-4 {
-    width:25%;
-    float:left;
-        }   
+       /*styling table of contents for medium project pages*/
+        .margin-content-l {
+        padding-left: 20px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+            padding-top: 10px;
+    }
+        .margin-content-r {
+        padding-left: 20px;
+        padding-bottom: 30px;
+        margin-top: 65px;
+    }
+    
+    
+/*styling table of contents columns mobile */
+        .margin-content-left {
+        padding-left: 40px;
+        margin-bottom: 10px;
+    }
+       .margin-content-middle {
+        padding-left: 20px;
+        margin-bottom: 10px;
+        padding-top:73px;
 
     }
+       .margin-content-right {
+        padding-left: 20px;
+         padding-top:73px;
 
-    /* ==============================
+    }
+    /*styling for table of contents on project pages */
+#project a {
+    font-weight: 300;
+    font-size:16px;
+
+} 
+    
+     #project .padding-role {
+        padding-top: 34px;
+        padding-left: 80px;
+        padding-bottom: 30px;
+    }
+    
+      
+
+}
+
+/* ==============================
 X-large devices (1440px or larger)
 ================================= */
-    @media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
 
 
-        /*removes tools column padding defined in mobile*/
-        #padding-top {
-            padding-top: 10px;
-        }
+    /*removes tools column padding defined in mobile*/
+    #padding-top {
+        padding-top: 10px;
+    }
 
-        .col-xl-6 {
-            width: 50%;
-            float: left;
-            padding-bottom: 40px;
-        }
-
-
-        body {
-            font-size: 18px;
-        }
-
-        /*removes tools column padding defined in mobile*/
-        #padding-top {
-            padding-top: 10px;
-        }
+    .col-xl-6 {
+        width: 50%;
+        float: left;
+        padding-bottom: 40px;
+    }
 
 
-        #padding-left {
-            /*footer columns */
-            padding-left: 80px;
-            margin-top: -40px;
+    body {
+        font-size: 18px;
+    }
 
-        }
+    /*removes tools column padding defined in mobile*/
+    #padding-top {
+        padding-top: 10px;
+    }
 
-#contact .margin-top {
-            /*footer columns */
-            margin-top: -40px;
-        }
-        
-/*===========================================styling "extra-large project" pages =============================================*/
 
-/* fixing the mystery margin on h5's in project area */
-#project h5 {
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
+    #padding-left {
+        /*footer columns */
+        padding-left: 80px;
+        margin-top: -40px;
 
-/*styling for large rows*/
-#project .margin {
-    margin: 15px 40px;
-    padding-left:60px;
-    padding-right:60px;
+    }
 
+    #contact .margin-top {
+        /*footer columns */
+        margin-top: -40px;
+    }
+
+    /*===========================================styling "extra-large project" pages =============================================*/
+
+    /* fixing the mystery margin on h5's in project area */
+    #project h5 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    /*styling for large rows*/
+    #project .margin {
+        margin: 15px 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+
+
+    }
+
+    /*styling for my large my role column*/
+    .padding-myrole {
+        margin-top: -100px;
+    }
+
+
+    /*styling for large columns*/
+    #project .padding-left {
+        padding-left: 60px;
+        padding-top: 40px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+    }
+
+    #project .padding-right {
+        padding-left: 0px;
+        padding-top: 40px;
+        padding-right: 50px;
+
+    }
+
+    #project .padding-role {
+        padding-top: 28px;
+        padding-left: 60px;
+        padding-bottom: 30px;
+    }
+
+
+    .ns-problem img {
+        display: block;
+        margin-left: 30px;
+        margin-right: 60px;
+        width: 85%;
+        margin-top: 30px;
+        float: right;
+
+    }
+
+    .ns-solution img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        margin-top: 50px;
+    }
+
+    /*styling for large competitive analysis*/
+    .ns-analysis img {
+        display: block;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 80%;
+        margin-top: 60px;
+    }
+
+    #project .analysis-left {
+        padding-left: 60px;
+        padding-top: 40px;
+        padding-right: 10px;
+        margin-right: -70px;
+        padding-bottom: 30px;
+    }
+
+    #project .analysis-right {
+        padding-top: 60px;
+        padding-right: 60px;
+    }
+
+    /*styling "on-boarding" section */
+    .project-hdr-01 {
+        padding: 10px 60px 0px 60px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .sub-header {
+        margin-top: -20px;
+    }
+
+    /*styling x-large on-boarding images */
+    .ns-signOn img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-top: -30px;
+        padding-top: 10px;
+        padding-left: 25px;
+    }
+
+    .ns-animal-helper img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-top: 10px;
+        padding-top: 0px;
+        padding-right: 20px;
+    }
+
+    /* styling x-large moon magic images */
+    .ns-moon-welcome {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+    .ns-moon-guide {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+
+    /* styling x-large LISTEN images */
+    .ns-listen-01 img {
+        display: block;
+        margin-left: -10px;
+        margin-right: auto;
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    .ns-listen-02 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 103%;
+        padding-bottom: 0px;
+        margin-top: -20px;
+    }
+
+    /* styling x-large OCEAN SPACE images */
+    .ns-ocean-01 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+        width: 105%;
+    }
+
+    .ns-ocean-02 img {
+        display: block;
+        margin-left: auto;
+        margin-right: 5px;
+        width: 98%;
+        padding-bottom: 0px;
+        margin-top: -20px;
+    }
+
+    .ns-myStuff-01 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .ns-myStuff-02 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+
+    .big-pics {
+        /* centering and making cover image fit full width of screen */
+        width: 100%;
+        display: block;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
     
-}
-/*styling for my row column*/
-.padding-role {
-      margin-top:10px;
-        }    
-        
-        
-/*styling for large columns*/
-#project .padding-left {
-    padding-left:60px;
-    padding-top:40px;
-    padding-right:10px;
-    padding-bottom:30px;
+    /*styling table of contents columns mobile */
+        .margin-content-left {
+        padding-left: 40px;
+        margin-bottom: 10px;
     }
-        
-#project .padding-right {
-    padding-left:0px;
-    padding-top:40px;
-    padding-right:50px;
+       .margin-content-middle {
+        padding-left: 20px;
+        margin-bottom: 10px;
+        padding-top:73px;
 
     }
+       .margin-content-right {
+        padding-left: 20px;
+         padding-top:73px;
 
-#project .padding-role {
-      padding-top: 28px;
-     padding-left: 60px;
-    padding-bottom: 30px;
-                    }
-        
-        
-.ns-problem img {
-    display: block;
-    margin-left: 30px;
-    margin-right:60px;
-    width: 85%;
-    margin-top:30px;
-    float:right;
-
-}
-
-.ns-solution img {
-    display: block;
-    margin-left: auto;
-    margin-right:auto;
-    width: 70%;
-    margin-top:50px;
-}
-        
-/*styling for large competitive analysis*/
-.ns-analysis img {
-    display: block;
-    margin-left: 0px;
-    margin-right:0px;
-    width: 80%;
-    margin-top:60px;
-     }    
-
-#project .analysis-left {
-    padding-left:60px;
-    padding-top:40px;
-    padding-right:10px;
-    margin-right:-70px;
-    padding-bottom:30px;
     }
+    /*styling for table of contents on project pages */
+#project a {
+    font-weight: 300;
+    font-size:18px;
 
-#project .analysis-right{
-    padding-top:60px;
-    padding-right:60px;
-    }  
-        
-/*styling "on-boarding" section */
-.project-hdr-01{
-    padding:10px 60px 0px 60px;
-    margin-top:20px;
-    margin-bottom:0px;
-    }
-        
-.sub-header {
-       margin-top:-20px;
-        }
-        
-/*styling x-large on-boarding images */
-   .ns-signOn img {
-    display: block;
-    margin-left: auto;
-    margin-right:auto;
-    width: 100%;
-    margin-top:-30px;
-    padding-top: 10px;
-    padding-left:25px;
-}
-
-.ns-animal-helper img {
-    display: block;
-    margin-left: auto;
-    margin-right:auto;
-    width: 100%;
-    margin-top:10px;
-padding-top: 0px;
-     padding-right:20px;
-}
+} 
     
-/* styling x-large moon magic images */        
-.ns-moon-welcome {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:95%;
-    padding-left:10px;
-    padding-right: 10px
-}
-
-.ns-moon-guide {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
-    padding-left:10px;
-    padding-right: 10px
-}
-        
-        
-/* styling x-large LISTEN images */        
-.ns-listen-01 img{
-    display: block;
-    margin-left:-10px;
-    margin-right:auto;
-    padding-top: 50px;
-    width:100%;
-}
-
-.ns-listen-02 img{
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:103%;
-    padding-bottom: 0px;
-    margin-top: -20px;
-}
-        
-/* styling x-large OCEAN SPACE images */        
-.ns-ocean-01 img{
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    padding-top: 30px;
-    width:105%;
-}
-
-.ns-ocean-02 img{
-    display: block;
-    margin-left:auto;
-    margin-right:5px;
-    width:98%;
-    padding-bottom: 0px;
-    margin-top: -20px;
-} 
-        
-.ns-myStuff-01
- {
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
-}  
-
-.ns-myStuff-02{
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:95%;
-} 
-        
-.big-pics {
-    /* centering and making cover image fit full width of screen */
-    width: 100%;
-   display:block;
-    padding-right:40px;
-    padding-left: 40px;
-}    
-
+     #project .padding-role {
+        padding-top: 34px;
+        padding-left: 100px;
+        padding-bottom: 30px;
     }
+    
+
+}
