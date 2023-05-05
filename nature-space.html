@@ -80,8 +80,8 @@
 
 
         <div id="project">
-            <div class="contaner">
-                <div class="row margin" style="background-color: #f6f5f3">
+            <div class="container">
+                 <div class="row margin" style="background-color: #f6f5f3">
                     <!-- about the project -->
                     <div class="col-lg-6 col-xl-7 padding-left">
                         <!--the project-->
@@ -111,9 +111,46 @@
                     </div>
                     <!--right column-->
                 </div>
-                <!--project-->
-                <!--about the project row-->
 
+                    <!--table of contents-->
+
+                <!--about the project row-->
+                <div class="row margin" style="background-color: #f6f5f3">
+                    <div class="col-lg-3 margin-content-left">
+                        <h5>Table of Contents:</h5>
+                        <ul class="no-bullets">
+                            <li><a href="#problem">The Problem</a></li>
+                            <li><a href="#solution">The Solution</a></li>
+                            <li><a href="#diagram">User Flow Diagram</a></li>
+                            <li><a href="#analysis">Competitive Analysis</a></li>
+                            <li><a href="#moon-proto">Moon Magic Prototype</a></li>
+                            <li><a href="#typography">Illustrations &amp; Typography</a></li>
+                            
+                        </ul>
+                    </div>
+                      <div class="col-lg-3 margin-content-middle">
+                        <ul class="no-bullets">
+                            <li><a href="#color">Color Palette</a></li>
+                            <li><a href="#iOS-wframes">iOS Wireframes Stages</a></li>
+                            <li><a href="#material-wframes">Material Wireframe Stages</a></li>
+                            <li><a href="#on-boarding">On-Boarding</a></li>
+                           <li><a href="#solution">On-Boarding &amp; Profile Prototype</a></li>
+                            <li><a href="#my-stuff">Profile ("My Stuff")</a></li>
+                        </ul>
+                    </div>
+                          <div class="col-lg-3 margin-content-right">
+                        <ul class="no-bullets">
+                            <li><a href="#feelings">I am Feeling Screens</a></li>
+                            <li><a href="#moon-screens">"Moon Magic" Breathe Exercise </a></li>
+                             <li><a href="#listen">"Listen" Animated Audio</a></li>
+                            <li><a href="#safety">"Nature Space" Safe Space</a></li>
+                             <li><a href="#final-material">Final Material Screens</a></li>
+                             <li><a href="#final-iOS">Final iOS Screens</a></li>
+                        </ul>
+                    </div>
+                    <!--table of contents-->
+                </div>
+                <!--about the project row-->
 
                 <div class="row margin" style="background-color: #f6f5f3">
                     <!--problem-->
@@ -122,7 +159,7 @@
                         <!--text-->
 
 
-                        <h2><span>The Problem</span></h2>
+                        <h2 id="problem"><span>The Problem</span></h2>
                         <p>
                             The majority of the emotional well-being apps are built for adults, have long, laborious sign-on processes, and most require a subscription to access premium features. One has to be very careful when signing up for these apps to not unintentionally subscribe as most require payment information with a free trial period.</p>
                         <p>Most well-being apps do not offer a rapid solution, nor insight into a feeling. The apps I analyzed focused on long-term goals and solutions. It was frustrating not to easily "Check-In” with a current emotion. It seemed a valuable missing asset for not only children but adults too
@@ -530,7 +567,7 @@
 
                     <div class="project-hdr-01">
                         <h2><span>Nature Space</span> Welcome and Choices</h2>
-                        <p class="sub-header">Provide children with a <stong>safe spot in nature</stong> where they can exercise their imagination to <srong>learn valuable coping skills to deal with uncomfortable emotions.</srong> 
+                        <p class="sub-header">Provide children with a <strong>safe spot in nature</strong> where they can exercise their imagination to <strong>learn valuable coping skills to deal with uncomfortable emotions.</strong> 
 A place where they can feel safe.
 </p>
                     </div>
@@ -582,7 +619,7 @@ A place where they can feel safe.
                 <!--ocean space guided meditation-->
                 <!-- young boy & mom -->
                 <div class="big-pics">
-                    <picture>
+                    <picture id="moon-proto">
                         <source srcset="img/natureSpace/naturespace-web-project-cvr@2.jpg" media="(max-width:767px)">
                         <img src="img/natureSpace/naturespace-web-project-cvr@1.jpg" alt="young boy holding an android phone">
                     </picture>
@@ -595,27 +632,9 @@ A place where they can feel safe.
         </div>
         <!--project class-->
 
-        <style>
-            #btnScrollToTop {
-                position: fixed;
-                right: 10px;
-                bottom: 10px;
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                background: #e9a7a1;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-                color: #ffffff;
-                border: none;
-                outline: none;
-                cursor: pointer;
-            }
+         
 
-            #btnScrollToTop:active {
-                background: #ba8681;
-            }
 
-        </style>
 
         <button id="btnScrollToTop">
             <i class="material-icons">arrow_upward</i>
