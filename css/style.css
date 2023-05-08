@@ -675,9 +675,12 @@ ul.no-bullets {
     width: 100%;
 }
 
+
+
 .moon-exercise {
     padding: 0px 0px 20px 0px;
 }
+
 
 .ns-myStuff-01 {
     display: block;
@@ -760,6 +763,51 @@ ul.no-bullets {
     font-size:14px;
 
 }
+/*color palette img*/
+.ns-color {
+   display: block;
+   padding-left: 10px;
+   padding-right: 10px;
+   width: 100%;
+                        }
+
+/*columns within columns in illustration & typography*/
+    .dbl-col-padding {
+       margin-top:-30px;
+            padding-bottom: 50px;
+          margin-left:-10px;
+          margin-right:-10px;
+                   }  
+
+.dbl-col-padding-right{
+       margin-top:-50px;
+         margin-left:-10px;
+          margin-right:-10px;
+        padding-top: 0px;
+    padding-bottom: 30px;
+            margin-right: 0px;
+                   }  
+
+/*illustrations img*/
+    .ns-illustrations {
+ display: block;
+   padding-left: 0px;
+   padding-right: 0px;
+   width: 100%;
+    margin-top:-15px;
+
+                       
+                   }  
+
+.ns-typography{
+ display: block;
+   padding-left: 0px;
+   padding-right: 0px;
+    margin-top:-30px;
+   width: 100%;
+                       
+                   }  
+
 
 /*====================== end of styling mobile project pages =================================================================*/
 
@@ -1174,6 +1222,33 @@ Medium devices (640px and larger)
         padding-bottom: 30px;
     }
     
+ /*columns within columns in illustration & typography*/
+    .dbl-col-padding {
+       margin-top:0px;
+        padding-top: 0px;
+          margin-left:-10px;
+          margin-right:-10px;
+        margin-top:-50px;
+                   }  
+
+/*illustrations img*/
+    .ns-illustrations {
+ display: block;
+   padding-left: 0px;
+   padding-right: 0px;
+   width: 100%;
+    margin-top:0px;
+                   }  
+
+.ns-typography{
+ display: block;
+   padding-left: 0px;
+   padding-right: 0px;
+    margin-top:-30px;
+   width: 100%;
+                   }  
+
+    
 }
 
 /*============================== end of styling "medium-project-pages"============================================*/
@@ -1570,7 +1645,50 @@ Large devices (1024px or larger)
         padding-bottom: 30px;
     }
     
-      
+    
+ /*styling for illustration & typography rows */
+    .dbl-col-padding{
+       margin-top:-50px;
+        padding-top: 0px;
+          margin-left:-10px;
+          margin-right:-10px;
+        margin-top:-50px;
+                   }  
+
+/*illustrations img*/
+    .ns-illustrations {
+ display: block;
+   padding-left: 0px;
+   padding-right: 0px;
+   width: 100%;
+    margin-top:0px;
+                   }  
+/*typography img */
+.ns-typography{
+ display: block;
+   padding-left: 0px;
+   padding-right: 30px;
+    margin-top:50px;
+   width: 100%;
+                   } 
+    
+    /*right column*/
+.dbl-col-padding-right{
+       margin-top:-50px;
+        padding-top: 0px;
+          margin-left:-10px;
+          margin-right:0px;
+            margin-right: 20px;
+                   }  
+/*color palette image*/ 
+  .ns-color {
+   display: block;
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-top: 10px;
+   width: 100%;
+                        
+
 
 }
 
@@ -1837,6 +1955,21 @@ X-large devices (1440px or larger)
         padding-left: 100px;
         padding-bottom: 30px;
     }
+     
+ /*styling for illustration & typography rows */
+
+/*typography img */
+.ns-typography{
+   margin-top:20px;
+                   } 
+    
+/*color palette image*/ 
+  .ns-color {
+   padding-left: 60px;
+   padding-right: 60px;
+   padding-top: 20px;
+   width: 100%;
+
     
 
 }
