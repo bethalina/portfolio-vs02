@@ -599,7 +599,7 @@ ul.no-bullets {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        width: 100%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
     }
 
@@ -1116,6 +1116,25 @@ Medium devices (640px and larger)
           margin-right: 20px;
                    }  
     
+    /*styling wireframe mockup rows */
+.ns-wireframe img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    }
+    /*controlling margins around the wireframe rows */
+    .iOS-frame {
+        margin:0px 30px;
+        
+    }
+    
+    .ns-wireframe-final {
+        margin-top:20px;
+        
+    }
+
     }
     
 /*============================== end of styling "medium-project-pages"============================================*/
@@ -1475,8 +1494,26 @@ Large devices (1024px or larger)
     margin-bottom: -20px;
     width:100%;
 }  
+  
+    /*styling wireframe mockup rows */
+.ns-wireframe img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95 %;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    }
+    /*controlling margins around the wireframe rows */
+    .iOS-frame {
+        margin:0px 60px;
         
-        .ns-wireframes-wonky {
+    }
+    
+    .ns-wireframe-final {
+        margin-top:0px;
+        
+    }      
+.ns-wireframes-wonky {
             margin-top: -15px;
         } 
         
