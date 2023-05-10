@@ -895,7 +895,7 @@ Medium devices (640px and larger)
 #project a:hover {
     color: #7E7F86;
     font-weight: 400;
-        text-decoration: underline;
+    text-decoration: underline;
     text-decoration-thickness: 2px;
 
 }
@@ -907,12 +907,12 @@ Medium devices (640px and larger)
 }
 /*styling table of contents columns mobile */
         .margin-content-left {
-        padding-left: 40px;
-        margin-bottom: -17px;
+        padding-left: 0px;
+        margin-bottom: 0px;
     }
        .margin-content-middle {
-        padding-left: 40px;
-        margin-bottom: -17px;
+        padding: 0px;
+        margin-top: -40px;
 
     }
        .margin-content-right {
@@ -1134,6 +1134,23 @@ Medium devices (640px and larger)
         margin-top:20px;
         
     }
+    
+ /*styling table of contents columns mobile */
+        .margin-content-left {
+        padding-left: 30px;
+    }
+       .margin-content-middle {
+        padding-left: 30px;
+        margin-top: -20px;
+
+    }
+       .margin-content-right {
+        padding-left: 30px;
+        margin-top: -20px;
+        margin-bottom: 20px;
+
+    }
+
 
     }
     
@@ -1522,6 +1539,23 @@ Large devices (1024px or larger)
     width:25%;
     float:left;
         }   
+
+    }
+
+    
+ /*styling table of contents columns mobile */
+        .margin-content-left {
+        padding-left: 30px;
+    }
+       .margin-content-middle {
+        padding-left: 30px;
+        margin-top: 65px;
+
+    }
+       .margin-content-right {
+        padding-left: 30px;
+        margin-top: 65px;
+        margin-bottom: 20px;
 
     }
 
