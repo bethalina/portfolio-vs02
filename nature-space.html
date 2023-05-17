@@ -18,10 +18,10 @@
     <!--link to fontawesome icons-->
     <script src="https://kit.fontawesome.com/504d913882.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/804e8b6310.js" crossorigin="anonymous"></script>
-
+<!--google symbols -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <title>Nature Space Emotional Well Being App</title>
 </head>
-
 <body id="nature-space">
     <!-- for the header -->
 <header>
@@ -294,10 +294,12 @@
 
                 <!-- Young Girl with Android -->
                 <div class="big-pics">
-                    <picture>
+                  <a href="https://vimeo.com/777645281/ab307e3d7b" target="_blank">
+<picture>
                         <source srcset="img/natureSpace/naturespace-web-project-8@2.jpg" media="(max-width:767px)">
-                        <img src="img/natureSpace/naturespace-web-project-8@1.jpg" alt="young girl holding an android phone using a emotional well-being app">
+                            <img src="img/natureSpace/naturespace-web-project-8@1.jpg" alt="young girl holding an android phone using a emotional well-being app">
                     </picture>
+                      </a>
                 </div>
                 
  <div class="row margin" style="background-color: #f6f5f3">
@@ -306,7 +308,20 @@
                     <div class="project-hdr-01">
                         <h2><span>Branding:</span> Illustrations and Typography</h2>
                     </div>
-  
+  <style>
+    #project  .highlight {
+  background-image: linear-gradient(
+    -100deg,
+    rgba(233,167,161, 0.2),
+    rgba(233,167,161, 0.7) 95%,
+    rgba(233,167,161, 0.2)
+  );
+        color:#282A36;
+        font-weight: 500;
+
+      }
+     </style>
+     <!--background-position: lowers the highlight position--> 
                     <div class="col-lg-6 col-xl-6 padding-left">
 <div class="dbl-col-padding"><p>Emotions, large buttons, and moon magic <strong>illustrations were drawn in Adobe Illustrator.</strong> Many of the illustrations are 
 <strong>intended to be converted to animations.</strong></p></div>
@@ -316,7 +331,7 @@
                         </picture>
                     </div>
                     <div class="col-lg-6 col-lg-6 padding-left">
-                     <div class="dbl-col-padding-right"><p>I paired a <strong>solid, easy-to-read </strong>primary font with a <strong>lively, kid-friendly font.</strong></p></div>
+                     <div class="dbl-col-padding-right"><p>I paired a <span class="highlight">solid, easy-to-read </span>primary font with a <span class="highlight">lively, kid-friendly font.</span></p></div>
                            <picture class="ns-typography">
                             <source srcset="img/natureSpace/naturespace-web-project-31@2.jpg" media="(max-width:300px)">
                             <img src="img/natureSpace/naturespace-web-project-31@1.jpg" alt="Ligurn font & Chaloops font styling">
@@ -666,7 +681,10 @@
 
 
             </div> <!--project class-->
-
+        
+        <!--scroll to top button -->
+        <button id="btnScrollToTop">
+        <i class="material-icons">arrow_upward</i> </button>
     </main>
 
 
@@ -729,6 +747,15 @@
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+    
+    <script>const btnScrollToTop = document.querySelector("#btnScrollToTop");
+    btnScrollToTop.addEventListener("click", function () {
+        
+ $("html, body").animate({ scrollTop: 1100 }, "slow");
+
+});
+
+});</script>
 
 </body>
 
