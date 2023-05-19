@@ -949,12 +949,12 @@ Medium devices (640px and larger)
     }
 
     /*styling table of contents columns mobile */
-    .margin-content-left {
-        padding-left: 0px;
+    .table-content-left{
+        padding-left: 10px;
         margin-bottom: 0px;
     }
 
-    .margin-content-middle {
+    .table-content-middle {
         padding: 0px;
         margin-top: -40px;
 
@@ -1443,8 +1443,8 @@ Large devices (1024px or larger)
     }
 
     #project .padding-role {
-        padding-top: 28px;
-        padding-left: 60px;
+        padding-top: 41px;
+        padding-left: 119px;
         padding-bottom: 30px;
     }
 
@@ -1643,12 +1643,12 @@ Large devices (1024px or larger)
 
 /*styling table of contents columns mobile */
 .margin-content-left {
-    padding-left: 30px;
+    padding-left: 60px;
 }
 
 .margin-content-middle {
-    padding-left: 30px;
-    margin-top: 65px;
+    padding-left: 45px;
+    margin-top: 75px;
 
 }
 
