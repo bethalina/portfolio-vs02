@@ -329,8 +329,7 @@ header .logo {
     max-width: 50px;
     margin-top: 20px;
     margin-bottom: 10px;
-    margin-left: 20px;
-    height: 24px;
+    margin-left: 10px;
     height: 28px;
 
 }
@@ -380,19 +379,23 @@ nav > ul > li > a {
     /*stylizes pink h1 "about me " page & "inline" removes the return after "hello,... */
 }
 
-#hero h1 {
-    text-align: center;
-    /* Centers text on mobile*/
-}
-
-#hero h4 {
-    text-align: center;
-    /* Centers text on mobile */
-    font-size: 24px;
-    color: #282A36;
-    font-weight: 200;
-    letter-spacing: 2px;
-}
+ #hero h1 {
+        text-align: left;
+        font-size: 60px;
+    margin-bottom: -15px;
+        padding-left: 15px;
+     margin-top: -10px;
+     
+    }
+    #hero h4 {
+        text-align: left;
+        color: #e9a7a1;
+        font-weight: 500;
+        letter-spacing: 2px;
+        padding-left: 15px;
+        padding-right:15px;
+        margin-top: 9px;
+    }
 
 
 #contact span {
@@ -726,6 +729,43 @@ ul.no-bullets {
         margin-top: -18px;
     }
 
+    /*styling for table of contents on project pages */
+ul.table {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+    /*styling for table of contents on project pages */
+    .table a {
+        display: inline-block;
+        background-color: transparent;
+        font-family: "lato", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #282A36;
+        letter-spacing: 1px;
+        font-size: 14px;
+        text-decoration: underline;
+        text-decoration-color: #e9a7a1;
+        text-decoration-thickness: 2px;
+
+
+    }
+
+    .table a:hover {
+        color: #7E7F86;
+        font-weight: 400;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+
+    }
+
+    .table a:active {
+        color: #7E7F86;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+
 /*====================== end of styling mobile project pages =================================================================*/
 
 /*--------------------------------------------End Section---------------------------------------------*/
@@ -831,7 +871,12 @@ Medium devices (640px and larger)
             13px;
         /*padding-bottom */
     }
+/*style the logo*/
+header .logo {
+    margin-left: 0px;
 
+}
+    
     nav {
         width: auto;
         float: right;
@@ -862,15 +907,6 @@ Medium devices (640px and larger)
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
     }
 
-    #hero h1 {
-        /*stlize h1 for medium*/
-        text-align: center;
-    }
-
-    #hero h4 {
-        /*stlize h4 for medium*/
-        text-align: center;
-    }
 
     /*stylinging medium rows */
     .row {
@@ -1274,7 +1310,7 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
     .container {
-        max-width: 1200px;
+        max-width: 1920px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1295,22 +1331,9 @@ Large devices (1024px or larger)
         float: right;
     }
 
-    #hero h1 {
-        text-align: left;
-        font-size: 60px;
-        padding-left: 28px;
-    }
-
-    #hero h4 {
-        text-align: left;
-        color: #e9a7a1;
-        font-weight: 500;
-        letter-spacing: 2px;
-        padding-left: 28px;
-    }
 
     #hero {
-        margin-left: 30px;
+        margin-left: 15px;
     }
 
     h3 {
